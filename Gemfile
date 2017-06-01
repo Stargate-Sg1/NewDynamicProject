@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'materialize-sass'
 gem 'devise'
 gem "paperclip", "~> 5.0.0"
+gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-materialize'
 gem 'rails', '4.2.4'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'

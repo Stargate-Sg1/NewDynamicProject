@@ -54,7 +54,7 @@ class ContentsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_content
-      @content = Content.find(params[:id])
+      @content = Content.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
@@ -63,7 +63,7 @@ class ContentsController < ApplicationController
     end
 
     def check_user
-      if current_user != @content.current_user
+      if current_user != @content.user
         redirect_to root_url, alert: "Scusa ma non hai accesso a questa pagina"
       end
     end 

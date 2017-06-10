@@ -1,10 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'materialize-sass'
-gem 'devise'
-gem "paperclip", "~> 5.0.0"
-gem 'will_paginate', '~> 3.1.0'
-gem 'will_paginate-materialize'
 gem 'rails', '4.2.4'
 gem 'sqlite3'
 gem 'sass-rails', '~> 5.0'
@@ -14,6 +9,26 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+
+gem 'materialize-sass'
+
+gem 'devise'
+
+gem "paperclip", "~> 5.0.0"
+
+gem 'will_paginate', '~> 3.1.0'
+
+gem 'will_paginate-materialize'
+
+gem 'friendly_id', '~> 5.1.0'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'stripe'
+
+gem 'aasm'
+
 group :development, :test do
  gem 'byebug'
 end

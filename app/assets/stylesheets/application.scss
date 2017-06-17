@@ -1,15 +1,26 @@
 @import "materialize";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
  body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Raleway', sans-serif;
   }
   h1 {
-    font-size: 3em;
+    font-size: 3.5em;
   }
+  h2 {
+  font-size: 2em;
+}
+
   main {
     flex: 1 0 auto;
+  }
+
+  .home-subtitle {
+    margin: 5% 0 5% 0;
   }
 
   .btn-devise {
@@ -30,4 +41,12 @@
   }
   .card-image{
     height: 150px;
+  }
+    .fa-social {
+    padding: 0 10%;
+  }
+  @media (max-width: 600px) {
+    .fa-social {
+    padding: 0 10%;
+  }
   }

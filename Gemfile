@@ -29,6 +29,10 @@ gem 'stripe'
 
 gem 'aasm'
 
+gem 'aws-sdk', '< 2.0'
+
+gem 'font-awesome-sass'
+
 group :development, :test do
  gem 'byebug'
  gem 'sqlite3'

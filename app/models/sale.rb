@@ -1,7 +1,7 @@
 class Sale < ActiveRecord::Base
 	
 	before_create :generate_guid
-	belongs_to: :content
+	belongs_to :content
 
 	include AASM
 
@@ -38,7 +38,7 @@ class Sale < ActiveRecord::Base
 		self.update(stripe_id: charge.stripe_id)
 		self.completed!
 	rescue Stripe::StripeError => e
-		self.update_attributes (error: e.message)
+		self.update_attributes(error: e.message)
 		self.fail!
 	end	
 
